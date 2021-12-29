@@ -7,12 +7,14 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\"",
-    "prepare": "husky install",
-    "sort-package-json": "npx sort-package-json"
+    "prettier": "npx prettier --write \"src/**/*.{js,jsx,ts,tsx,json,css,scss,md}\" \"public/**/*.{html,json}\"",
+    "prepare": "husky install"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
+    ],
+    "public/**/*.{html,json}": [
       "prettier --write"
     ]
   },
@@ -28,11 +30,13 @@
       "last 1 safari version"
     ]
   },
+  "prettier": {
+    "printWidth": 120
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest",
-      "eslint:recommended",
       "plugin:prettier/recommended"
     ],
     "rules": {
