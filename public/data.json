@@ -1,0 +1,28 @@
+[
+  {
+    "acronym": "ABC",
+    "definitions": [
+      {
+        "meaning": "Arf Blob Card",
+        "explanation": "A meaningful explanation/context about the acronym.",
+        "categories": ["AWS", "Alexa", "Retail"]
+      },
+      {
+        "meaning": "Arduino Bot Cut",
+        "explanation": "A meaningful explanation/context about the acronym.",
+        "categories": ["AWS", "Operations", "Retail"]
+      }
+    ],
+    "connections": ["OOTO"]
+  },
+  {
+    "acronym": "OOTO",
+    "definitions": [
+      {
+        "meaning": "Out Of The Office",
+        "categories": ["Work"]
+      }
+    ],
+    "connections": ["ABC"]
+  }
+]
